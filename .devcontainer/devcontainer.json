@@ -1,0 +1,22 @@
+{
+  "name": "gg-state-machine",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "golang.go",
+        "GitHub.codespaces",
+        "GitHub.copilot",
+        "GitHub.vscode-pull-request-github",
+        "bierner.github-markdown-preview",
+        "eamodio.gitlens",
+        "bierner.markdown-mermaid",
+        "doggy8088.quicktype-refresh",
+        "wayou.vscode-todo-highlight",
+        "redhat.vscode-yaml",
+        "ms-azuretools.vscode-docker",
+        "rangav.vscode-thunder-client",
+        "premparihar.gotestexplorer"
+      ]
+    }
+  }
+}
