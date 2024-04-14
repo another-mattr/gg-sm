@@ -1,34 +1,3 @@
-# gg-sm
-Go Go State Machine
-
-A super-simple state machine library for Go. It supports basic transitions as well as callbacks for entering and exiting states.
-
-## Usage
-
-Here's a simple traffic light example:
-
-```go
-// filename = main.go
-package main
-
-import (
-	"github.com/another-mattr/gg-sm/examples/simple_traffic_light/traffic_light"
-	"github.com/another-mattr/gg-sm/ggsm"
-)
-
-func main() {
-	tl := traffic_light.NewTrafficLight("main & oak", traffic_light.Red)
-	for i := 0; i < 6; i++ {
-		tl.HandleEvent(ggsm.Event{
-			Type:    traffic_light.Change,
-			Payload: traffic_light.ChangeEventPayload{Count: i},
-		})
-	}
-}
-```
-
-```go
-// filename = traffic_light.go
 package traffic_light
 
 import (
@@ -85,4 +54,3 @@ func NewTrafficLight(id string, currentState ggsm.State) *TrafficLight {
 func (tl *TrafficLight) GetId() string {
 	return tl.id
 }
-```
